@@ -8,6 +8,25 @@
     <title>MoneGrow</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!--
+
+     I declare that this code was written by me. 
+
+     I will not copy or allow others to copy my code. 
+
+     I understand that copying code is considered as plagiarism.
+
+ 
+
+     Student Name: CHONG KAI WEN
+
+     Student ID: 22018889
+
+     Class: C369-2D-E63C-A
+
+     Date/Time Last modified: 
+
+       -->
 
     <style>
 
@@ -139,31 +158,31 @@
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function promptLogin() {
+        function promptLogin() {  // Shows alert message and redirect to Logged in homepage
             alert('You are logged in!');
             window.location.href = 'LoginHomepage.html';
         }
 
 
-        function promptRegistration() {
+        function promptRegistration() {  // Shows alert message and redirect to Logged in homepage
             alert('You are registered and logged in!');
             window.location.href = 'LoginHomepage.html';
         }
 
 
-        document.getElementById('registration-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const nric = document.getElementById('nric').value;
-            const address = document.getElementById('address').value;
+        document.getElementById('registration-form').addEventListener('submit', function (event) { // Event listener is triggered when form is submitted
+            event.preventDefault(); // To execute form validation by preventing default action
+ 
+            const name = document.getElementById('name').value;  //retrieves the value of name 
+            const email = document.getElementById('email').value;  //retrieves the value of email
+            const password = document.getElementById('password').value;  //retrieves the value of password
+            const nric = document.getElementById('nric').value;  //retrieves the value of nric
+            const address = document.getElementById('address').value;  //retrieves the value of address
 
             if (name && email && password && nric && address) {
-                promptRegistration();
+                promptRegistration(); // Triggers function
             } else {
-                alert('Please fill in all the required fields.');
+                alert('Please fill in all the required fields.'); // Message pops when there is missing input
             }
         });
     </script>
